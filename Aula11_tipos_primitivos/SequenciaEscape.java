@@ -1,0 +1,14 @@
+package aulas.Aula11_tipos_primitivos;
+
+public class SequenciaEscape {
+
+    public static void main(String[] args) {
+
+        //Hello World
+        System.out.println("\"Hello, World\"\n"); // Pulo de linha "\" "\"
+
+        //1/4
+        System.out.println("1\\4");
+    }
+
+}
