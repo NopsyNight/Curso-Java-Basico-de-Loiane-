@@ -31,11 +31,11 @@ public class questao12 {
 
         if (salarioBruto <= 900) {
             System.out.println("Salário Bruto: (" + ganhoHoraTrabalhada + " * " + horasTrabalhadasMensais + ") : R$ " + salarioBruto);
-            System.out.println("(-) IR (0%)                  : R$ 00,00");
-            System.out.println("(-) INSS (0%)                : R$ 00,00");
-            System.out.println("FGTS (0%)                    : R$ 00,00");
-            System.out.println("Total de descontos           : R$ 00,00");
-            System.out.println("Salário Líquido              : R$ " + salarioBruto);
+            System.out.println("(-) IR (0%)                   : R$ 00,00");
+            System.out.println("(-) INSS (0%)                 : R$ 00,00");
+            System.out.println("FGTS (0%)                     : R$ 00,00");
+            System.out.println("Total de descontos            : R$ 00,00");
+            System.out.println("Salário Líquido               : R$ " + salarioBruto);
         }else if (salarioBruto > 900 && salarioBruto <= 1500){
             double inss = salarioBruto * 0.1;
             double fgts = salarioBruto * 0.11;
