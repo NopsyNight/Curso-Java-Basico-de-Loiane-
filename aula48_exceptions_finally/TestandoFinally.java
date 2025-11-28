@@ -1,0 +1,28 @@
+package aulas.aula48_exceptions_finally;
+
+public class TestandoFinally {
+    public static void main(String[] args){
+
+        int[] numeros = {4, 8, 16, 32 , 64 , 128};
+        int[] denominadores = {2, 0, 4, 8 , 0};
+
+        for(int i = 0; i < numeros.length; i++){
+            try{
+                System.out.println(numeros[i] + "/"+ denominadores[i] + " = "+(numeros[i]/denominadores[i]));
+            }
+            catch(ArithmeticException e1){
+                System.out.println("Erro ao dividir por zero"); // tratamento do 1º erro
+            }
+            catch(ArrayIndexOutOfBoundsException e2){
+                System.out.println("Erro por falta de um denominador para dividir o número.");
+            }
+            finally {
+                System.out.println("Essa linha é impressa sempre após o try ou catch");
+                System.out.println();
+            }
+            // O finally SEMPRE será executado após o uso do try ou catch.
+
+
+        }
+    }
+}
